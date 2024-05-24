@@ -31,6 +31,15 @@ cd AuthExpress
 npm install
 
 ```
+<h3> The API has the following endpoints: </h3>
+
+| Methods |  URLs  | Action |
+|:-----|:--------:|------:|
+| POST   | /auth/login | Authenticates a user by validating their email and password, and creates a session token for the authenticated user. |
+| POST   | /auth/register | Registers a new user by creating an account with a username, email, and password, where the password is hashed for security |
+| GET   | /users | Retrieves a list of authenticated users |
+| DELETE   | /user/:id | Deletes a user with a specific ID. Only authenticated users who are the account owners can perform this action |
+| PATCH   | /users/:id | Updates the information of a user with a specific ID. Only authenticated users who are the account owners can perform this action. |
 
 <hr>
 Your feedback and contributions are welcome!
